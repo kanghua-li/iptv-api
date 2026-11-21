@@ -1,6 +1,10 @@
 # 这是本地源列表，一行一个源，格式为：频道名称,接口地址
 # 如果有多个本地源文件，可以在config目录下创建local目录进行存放，支持txt/m3u文件格式
-# 支持设置白名单：接口后添加$!
+# 支持设置白名单：接口后添加
 # The local source list, one line per source, format: channel name, interface address
-# Support setting whitelist: add $! after the interface
+# Support setting whitelist: add  after the interface
 # If there are multiple local source files, you can create a local directory under the config directory for storage, supporting txt/m3u file formats
+
+# 手动补充：云端CDN的广东体育经常整条链路失效，这里加两条公益组播中转源作为保底（ 表示不测速、始终保留）
+广东体育,http://www.3344.uk:8888/udp/239.77.0.112:5146
+广东体育,http://167.88.62.43:64013/0.ts
