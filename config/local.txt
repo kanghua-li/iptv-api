@@ -1,16 +1,12 @@
 # 这是本地源列表，一行一个源，格式为：频道名称,接口地址
-# 如果有多个本地源文件，可以在config目录下创建local目录进行存放，支持txt/m3u文件格式
 # 支持设置白名单：接口后添加$!
-# The local source list, one line per source, format: channel name, interface address
-# Support setting whitelist: add $! after the interface
-# If there are multiple local source files, you can create a local directory under the config directory for storage, supporting txt/m3u file formats
 
-# 广东体育专用保底源（2026-11-21 20:30 实测，按速度排序，$! = 不测速、始终保留在最前）
-广东体育,http://183.30.201.118:10002/rtp/239.77.0.168:5146$!
-广东体育,http://14.157.24.38:2345/rtp/239.77.0.168:5146$!
-广东体育,http://183.30.201.118:10002/rtp/239.77.0.112:5146$!
-广东体育,http://125.89.163.44:8888/udp/239.77.0.112:5146$!
-广东体育,http://112.92.129.95:9898/hls/5/index.m3u8$!
+# 广东体育保底源（2026-11-26 19:40 实测，选8个不同服务器保证冗余，$! = 不测速、始终保留）
 广东体育,http://net.manyee.net:18888/rtp/239.77.0.112:5146$!
-广东体育,http://61.145.188.90:50055/udp/239.77.0.112:5146$!
+广东体育,http://121.10.7.16:4000/udp/239.77.0.112:5146$!
+广东体育,http://iptv.xxika.net:8188/udp/239.77.0.112:5146$!
+广东体育,http://167.88.62.43:64013/0.ts$!
+广东体育,http://tv.8610000.cn:555/gdtv/gdtv.php?id=47$!
 广东体育,http://120.198.84.146:9901/tsfile/live/1015_1.m3u8$!
+广东体育,http://rfx2018.55555.io:2345/udp/239.77.0.112:5146$!
+广东体育,http://14.157.24.38:2345/rtp/239.77.0.168:5146$!
